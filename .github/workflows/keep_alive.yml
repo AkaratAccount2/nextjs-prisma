@@ -1,5 +1,8 @@
 name: Keep alive cron job
 on:
+  push:
+    branches:
+        - main  # Adjust the branch name as needed
   schedule:
     - cron: '0 12 * * *' # daily https://crontab.guru/#0_12_*_*_*
 jobs:
